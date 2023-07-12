@@ -1,0 +1,8 @@
+from abc import ABC, abstractmethod
+from datetime import date
+
+# Serviceable interface
+class Serviceable(ABC):
+    @abstractmethod
+    def needsService(self) -> bool:
+        pass
